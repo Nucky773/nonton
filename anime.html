@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Anime</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #1e1e2e;
+      padding: 10px 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #facc15; /* kuning */
+      text-decoration: none;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      position: relative;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #facc15;
+    }
+    /* Dropdown */
+    .navbar ul li ul {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background: #2a2a3d;
+      list-style: none;
+      padding: 10px 0;
+      margin: 0;
+      border-radius: 5px;
+    }
+    .navbar ul li:hover ul {
+      display: block;
+    }
+    .navbar ul li ul li {
+      padding: 5px 20px;
+    }
+    .navbar ul li ul li a {
+      color: white;
+    }
+    .navbar ul li ul li a:hover {
+      color: #facc15;
+    }
+    /* Search */
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .search-box input {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+    .search-box button {
+      padding: 5px 10px;
+      border: none;
+      background: #facc15;
+      color: black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .search-box button:hover {
+      background: #eab308;
+    }
+    /* Dark mode button */
+    .dark-mode-btn {
+      margin-left: 10px;
+      padding: 5px 10px;
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .dark {
+      background: #111;
+      color: #eee;
+    }
+	<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(45deg, #ff0000, #8000ff);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .hero {
+      background: url('https://wallpapercave.com/wp/wp9414252.jpg') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      background: rgba(0,0,0,0.5);
+      padding: 15px 30px;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .section h2 {
+      border-left: 5px solid #ff0000;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .anime-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .anime-card {
+      background: #2a2a2a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .anime-card:hover {
+      transform: scale(1.05);
+    }
+    .anime-card img {
+      width: 100%;
+      display: block;
+    }
+    .anime-card .info {
+      padding: 10px;
+    }
+    .anime-card .info h3 {
+      font-size: 1rem;
+      margin: 0 0 5px;
+    }
+    .anime-card .info p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo">AnimeZone</a>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Daftar Anime</a></li>
+      <li><a href="#">Ongoing</a></li>
+      <li>
+        <a href="#">Genre ▾</a>
+        <ul>
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Romance</a></li>
+          <li><a href="#">Comedy</a></li>
+          <li><a href="#">Isekai</a></li>
+          <li><a href="#">Horror</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="search-box">
+      <input type="text" placeholder="Cari Anime...">
+      <button>Cari</button>
+      <button class="dark-mode-btn" onclick="toggleDark()">🌙</button>
+    </div>
+  </nav>
+    <section class="hero">
+    <h2>Tonton Anime Favoritmu Gratis!</h2>
+  </section>
+  <section class="section">
+    <h2>Anime Terbaru</h2>
+  <section class="section">
+<div class="anime-list">
+  <!-- Naruto -->
+  <a href="sakamoto.html" class="anime-card">
+    <img src="sakamoto1.jpg" alt="Sakamoto Days">
+    <div class="info">
+      <h3>Sakamoto Days</h3>
+      <p>Genre: Action, Adventure</p>
+    </div>
+  </a>
+
+  <!-- Attack on Titan -->
+  <a href="Jujutsukaisien.html" class="anime-card">
+    <img src="jujutsukaisen.jpg" alt="Jujutsukaisen">
+    <div class="info">
+      <h3>Attack on Titan</h3>
+      <p>Genre: Action, Drama</p>
+    </div>
+  </a>
+
+  <!-- Demon Slayer -->
+  <a href="demonslayer.html" class="anime-card">
+    <img src="https://cdn.myanimelist.net/images/anime/1517/100633.jpg" alt="Demon Slayer">
+    <div class="info">
+      <h3>Demon Slayer</h3>
+      <p>Genre: Action, Fantasy</p>
+    </div>
+  </a>
+</div>
+
+  </section>
+  <script>
+  function toggleDark() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
